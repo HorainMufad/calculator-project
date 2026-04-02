@@ -1,16 +1,15 @@
 #include <iostream> 
 using namespace std; 
-int main() { 
-char op; 
-double num1, num2; 
-// Prompt user to enter operator and numbers 
-cout << "Enter operator: %,+, -, *, /: "; 
+int main() {^, %,+, -, *, /: "; 
 cin >> op; 
 cout << "Enter two operands: "; 
 cin >> num1 >> num2; 
 // Perform calculation based on the operator 
 switch(op) { 
-   case '%':
+ case '^':
+      cout << num1 << " ^ " << num2 << " = " << pow(num1, num2);
+            break;
+case '%':
   cout << num1 << " % " << num2 << " = " << (int)num1 % (int)num2;
         break;
 case '+': 
